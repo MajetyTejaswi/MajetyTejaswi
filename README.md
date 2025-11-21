@@ -2,22 +2,41 @@
 
 Senior Software Engineer - Data & ML with 7+ years of experience designing high-performance ETL/ELT pipelines, implementing distributed data processing at scale, and deploying ML models into production.
 
-## Industry Experience
+## Professional Highlights
 
-**Sustainability & Environmental Tech**
-- Built scalable Azure Event Hub-Databricks-Delta Lake pipeline for real-time IoT sensor data
-- Automated ETL pipelines for 40+ internal/external emissions data sources
-- Implemented CI/CD with Jenkins and Terraform for data infrastructure
+- **92+** Data Pipelines Built
+- **7+** Years of Experience  
+- **15+** Technologies Mastered
+- **3** Cloud Platforms (AWS, Azure, GCP)
 
-**Telecommunications**
-- Built large-scale Network & Customer 360 Analytics platform processing terabytes of CDR data
-- Modeled Customer 360 datasets in Snowflake using dbt with comprehensive KPI framework
-- Optimized PySpark and Snowflake workloads, reducing runtime by 30%
+## Companies I've Worked With
 
-**Healthcare**
-- Architected HIPAA-compliant Azure Lakehouse for claims data processing
-- Engineered end-to-end ETL pipelines in ADF + Databricks with PHI safeguards
-- Reduced processing time from 2 days to 2 hours while cutting costs by 40%
+**Upright Tech** - Data Engineering & ML Solutions  
+**Proximus** - Network & Customer 360 Analytics  
+**Trustmark** - Claim Stream Analytics
+
+## Featured Projects
+
+### Enterprise Projects
+
+**Sustainability Data Platform**  
+Built scalable Azure Event Hub-Databricks-Delta Lake pipeline for real-time IoT sensor data processing. Implemented Bronze/Silver/Gold architecture reducing manual data prep by 60%.  
+*Tech: Azure, Databricks, PySpark, Delta Lake, Airflow*
+
+**Customer 360 Analytics Platform**  
+Architected large-scale telecom analytics platform processing terabytes of CDR data daily. Built modular dbt models in Snowflake with comprehensive KPI framework.  
+*Tech: AWS, Snowflake, dbt, PySpark*
+
+**HIPAA-Compliant Healthcare Data Lake**  
+Modernized legacy Informatica/Teradata to Azure Lakehouse, reducing processing time from 2 days to 2 hours and cutting costs by 40%.  
+*Tech: Azure, Databricks, ADF, Power BI*
+
+### Open Source Projects
+
+**[DBT-Setup](https://github.com/MajetyTejaswi/DBT-Setup)** - Comprehensive dbt project setup framework  
+**[AWS-IAC](https://github.com/MajetyTejaswi/AWS-IAC)** - Terraform modules for AWS data infrastructure  
+**[Airflow-Databricks-Orchestration](https://github.com/MajetyTejaswi/Airflow-Databricks-Orchestration)** - Production-ready Airflow DAGs for Databricks  
+**[Airflow-Snowflake](https://github.com/MajetyTejaswi/Airflow-Snowflake)** - Airflow operators for Snowflake pipelines
 
 ## Technical Skills
 
