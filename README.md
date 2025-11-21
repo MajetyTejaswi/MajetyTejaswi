@@ -1,69 +1,72 @@
-# Tejaswi Majety - Portfolio
+# Hi there, I'm Tejaswi Majety 👋
 
+<div align="center">
 
-Senior Software Engineer - Data & ML with 7+ years of experience designing high-performance ETL/ELT pipelines, implementing distributed data processing at scale, and deploying ML models into production.
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://majetytejaswi.github.io/MajetyTejaswi/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejaswimajety/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MajetyTejaswi)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:majetytejaswi@gmail.com)
 
-## Professional Highlights
+</div>
 
-- **92+** Data Pipelines Built
-- **7+** Years of Experience  
-- **15+** Technologies Mastered
-- **3** Cloud Platforms (AWS, Azure, GCP)
+---
 
-## Companies I've Worked With
+## 🚀 Senior Software Engineer - Data & ML
 
-**Upright Tech** - Data Engineering & ML Solutions  
-**Proximus** - Network & Customer 360 Analytics  
-**Trustmark** - Claim Stream Analytics
+💡 Passionate about turning complex data challenges into scalable, production-ready solutions. With **7+ years** of hands-on experience, I've architected and delivered **92+ data pipelines** across **Telecommunications, Healthcare, and Sustainability** industries, processing terabytes of data daily and driving measurable business impact.
 
-## Featured Projects
+### 🎯 What I Do
 
-### Enterprise Projects
+- 🔧 Design & build high-performance **ETL/ELT pipelines** that scale
+- ☁️ Architect **cloud-native data platforms** on AWS, Azure & GCP
+- 🤖 Deploy **ML models** into production environments
+- 📊 Transform raw data into actionable **business intelligence**
+- 🏗️ Implement modern **data lakehouse architectures** (Bronze/Silver/Gold)
 
-**Sustainability Data Platform**  
-Built scalable Azure Event Hub-Databricks-Delta Lake pipeline for real-time IoT sensor data processing. Implemented Bronze/Silver/Gold architecture reducing manual data prep by 60%.  
-*Tech: Azure, Databricks, PySpark, Delta Lake, Airflow*
+### 🌍 Industries I've Impacted
 
-**Customer 360 Analytics Platform**  
-Architected large-scale telecom analytics platform processing terabytes of CDR data daily. Built modular dbt models in Snowflake with comprehensive KPI framework.  
-*Tech: AWS, Snowflake, dbt, PySpark*
+📡 **Telecommunications** | 🏥 **Healthcare** | 🌱 **Sustainability** | 💼 **Financial Services**
 
-**HIPAA-Compliant Healthcare Data Lake**  
-Modernized legacy Informatica/Teradata to Azure Lakehouse, reducing processing time from 2 days to 2 hours and cutting costs by 40%.  
-*Tech: Azure, Databricks, ADF, Power BI*
+### 🌟 Open Source Projects
 
-### Open Source Projects
+📦 **[DBT-Setup](https://github.com/MajetyTejaswi/DBT-Setup)** - Comprehensive dbt project setup framework  
+🏗️ **[AWS-IAC](https://github.com/MajetyTejaswi/AWS-IAC)** - Terraform modules for AWS data infrastructure  
+🔄 **[Airflow-Databricks-Orchestration](https://github.com/MajetyTejaswi/Airflow-Databricks-Orchestration)** - Production-ready Airflow DAGs for Databricks  
+❄️ **[Airflow-Snowflake](https://github.com/MajetyTejaswi/Airflow-Snowflake)** - Airflow operators for Snowflake pipelines
 
-**[DBT-Setup](https://github.com/MajetyTejaswi/DBT-Setup)** - Comprehensive dbt project setup framework  
-**[AWS-IAC](https://github.com/MajetyTejaswi/AWS-IAC)** - Terraform modules for AWS data infrastructure  
-**[Airflow-Databricks-Orchestration](https://github.com/MajetyTejaswi/Airflow-Databricks-Orchestration)** - Production-ready Airflow DAGs for Databricks  
-**[Airflow-Snowflake](https://github.com/MajetyTejaswi/Airflow-Snowflake)** - Airflow operators for Snowflake pipelines
+## 🛠️ Technical Skills
 
-## Technical Skills
+**💻 Programming:** Python, SQL, PySpark, Shell  
+**⚙️ Data Engineering:** Airflow, Kafka, dbt, Databricks, Delta Lake, Terraform, Azure Event Hub, ADF, AWS Glue  
+**📊 Big Data:** Apache Spark, Hadoop, Hive, Presto, Trino, EMR, Databricks  
+**🗄️ Databases:** Snowflake, Redshift, PostgreSQL, Oracle, MongoDB, MySQL, Azure SQL DB, S3, ADLS, HDFS  
+**☁️ Cloud Platforms:** AWS, Azure, GCP  
+**🚀 DevOps:** Docker, Kubernetes, GitHub, Jenkins  
+**✅ Data Quality:** Great Expectations, Unity Catalog, Glue Data Catalog  
+**📈 Visualization:** Power BI, Tableau, Databricks SQL, Datadog  
+**🤖 Machine Learning:** Regression, Tree Models, SVM, XGBoost, Clustering  
+**🧠 ML Tools:** Scikit-Learn, Pandas, NumPy, TensorFlow, Keras, PyTorch, SageMaker
 
-**Programming:** Python, SQL, PySpark, Shell  
-**Data Engineering:** Airflow, Kafka, dbt, Databricks, Delta Lake, Terraform, Azure Event Hub, ADF, AWS Glue  
-**Big Data:** Apache Spark, Hadoop, Hive, Presto, Trino, EMR, Databricks  
-**Databases:** Snowflake, Redshift, PostgreSQL, Oracle, MongoDB, MySQL, Azure SQL DB, S3, ADLS, HDFS  
-**Cloud Platforms:** AWS, Azure, GCP  
-**DevOps:** Docker, Kubernetes, GitHub, Jenkins  
-**Data Quality:** Great Expectations, Unity Catalog, Glue Data Catalog  
-**Visualization:** Power BI, Tableau, Databricks SQL, Datadog  
-**Machine Learning:** Regression, Tree Models, SVM, XGBoost, Clustering  
-**ML Tools:** Scikit-Learn, Pandas, NumPy, TensorFlow, Keras, PyTorch, SageMaker
+---
 
-## Education
+## 📊 GitHub Stats
 
-**Master of Science in Computer Science**  
-University of Central Missouri, Missouri, MO (Aug 2023 - May 2025)
+<div align="center">
 
-**Bachelor of Technology in Computer Science**  
-K L University, India (July 2014 - May 2018)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MajetyTejaswi&show_icons=true&theme=radical)
 
-## Contact
+</div>
 
-**Email:** majetytejaswi@gmail.com  
-**Phone:** +1 (816) 447-5022  
-**LinkedIn:** [linkedin.com/in/tejaswimajety](https://www.linkedin.com/in/tejaswimajety/)  
-**GitHub:** [github.com/MajetyTejaswi](https://github.com/MajetyTejaswi)  
-**Portfolio:** [majetytejaswi.github.io/MajetyTejaswi](https://majetytejaswi.github.io/MajetyTejaswi/)
+---
+
+## 📫 Let's Connect!
+
+<div align="center">
+
+💼 **LinkedIn:** [linkedin.com/in/tejaswimajety](https://www.linkedin.com/in/tejaswimajety/)  
+🌐 **Portfolio:** [majetytejaswi.github.io/MajetyTejaswi](https://majetytejaswi.github.io/MajetyTejaswi/)  
+📧 **Email:** majetytejaswi@gmail.com
+
+**⭐ From [MajetyTejaswi](https://github.com/MajetyTejaswi)**
+
+</div>
