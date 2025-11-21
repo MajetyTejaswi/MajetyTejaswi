@@ -225,22 +225,29 @@ window.addEventListener('scroll', () => {
 
 // ===== Counter Animation for Stats =====
 const animateCounter = (counter) => {
-    const target = +counter.getAttribute('data-target');
+    const target = parseInt(counter.getAttribute('data-target'));
     const duration = 2000; // 2 seconds
-    const increment = target / (duration / 16); // 60fps
-    let current = 0;
-
-    const updateCounter = () => {
-        current += increment;
-        if (current < target) {
-            counter.textContent = Math.floor(current);
+    const startTime = performance.now();
+    
+    const updateCounter = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        const current = Math.floor(progress * target);
+        
+        if (progress < 1) {
+            counter.textContent = current;
             requestAnimationFrame(updateCounter);
         } else {
-            counter.textContent = target + (target > 3 ? '+' : '');
+            if (target > 3) {
+                counter.textContent = target + '+';
+            } else {
+                counter.textContent = target;
+            }
         }
     };
 
-    updateCounter();
+    requestAnimationFrame(updateCounter);
 };
 
 // Trigger counter when stats section is visible
@@ -257,12 +264,33 @@ const statsObserver = new IntersectionObserver((entries) => {
             statsObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
 const statsSection = document.querySelector('.about-stats');
 if (statsSection) {
     statsObserver.observe(statsSection);
 }
+
+// Fallback: trigger counter on scroll if observer doesn't work
+let counterTriggered = false;
+window.addEventListener('scroll', () => {
+    if (counterTriggered) return;
+    
+    const statsSection = document.querySelector('.about-stats');
+    if (statsSection) {
+        const rect = statsSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            counterTriggered = true;
+            const counters = statsSection.querySelectorAll('h4[data-target]');
+            counters.forEach(counter => {
+                if (!counter.classList.contains('counted')) {
+                    counter.classList.add('counted');
+                    animateCounter(counter);
+                }
+            });
+        }
+    }
+});
 
 // ===== Tilt Effect for Cards =====
 const cards = document.querySelectorAll('.project-card, .skill-card');
