@@ -49,11 +49,38 @@
 
 ---
 
-## 📊 GitHub Stats
+## 🏗️ System Design & Architecture
+
+I design scalable, production-grade data architectures. Here are some of my system designs:
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MajetyTejaswi&show_icons=true&theme=radical)
+### 📐 Architecture Diagrams
+
+> **Coming Soon**: Interactive system design diagrams created with Eraser.io
+
+**Featured Architectures:**
+- 🌐 **Real-Time Streaming Architecture** - Event-driven data pipelines with Kafka & Spark
+- 🏢 **Enterprise Data Lakehouse** - Bronze/Silver/Gold medallion architecture
+- ☁️ **Multi-Cloud Data Platform** - Hybrid AWS/Azure/GCP data orchestration
+- 🔄 **ML Pipeline Architecture** - End-to-end MLOps with SageMaker & Databricks
+
+� *Add your Eraser.io diagram links here once created*
+
+</div>
+
+---
+
+## �📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MajetyTejaswi&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MajetyTejaswi&layout=compact&theme=radical&hide_border=true&langs_count=8)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MajetyTejaswi&theme=radical&hide_border=true)
+
+![Profile Views](https://komarev.com/ghpvc/?username=MajetyTejaswi&color=blueviolet&style=for-the-badge)
 
 </div>
 
