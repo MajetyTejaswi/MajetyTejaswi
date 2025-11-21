@@ -135,15 +135,28 @@ window.addEventListener('scroll', () => {
 // ===== Form Submission =====
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         // Get form data
         const formData = new FormData(contactForm);
+        const data = {
+            name: formData.get('name') || contactForm.querySelector('input[type="text"]').value,
+            email: formData.get('email') || contactForm.querySelector('input[type="email"]').value,
+            subject: formData.get('subject') || contactForm.querySelectorAll('input[type="text"]')[1].value,
+            message: formData.get('message') || contactForm.querySelector('textarea').value
+        };
         
-        // Here you would typically send the data to a server
-        // For now, we'll just show an alert
-        alert('Thank you for your message! I will get back to you soon.');
+        // Create mailto link
+        const mailtoLink = `mailto:majetytejaswi@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(
+            `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+        )}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        alert('Opening your email client... If it doesn\'t open automatically, please email me at majetytejaswi@gmail.com');
         
         // Reset form
         contactForm.reset();
@@ -211,30 +224,36 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== Counter Animation for Stats =====
-const counters = document.querySelectorAll('.stat h4');
-const speed = 200;
+const animateCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const duration = 2000; // 2 seconds
+    const increment = target / (duration / 16); // 60fps
+    let current = 0;
 
-const countUp = () => {
-    counters.forEach(counter => {
-        const target = +counter.innerText.replace('+', '');
-        const count = +counter.getAttribute('data-count') || 0;
-        const inc = target / speed;
-
-        if (count < target) {
-            counter.setAttribute('data-count', Math.ceil(count + inc));
-            counter.innerText = Math.ceil(count + inc) + '+';
-            setTimeout(countUp, 1);
+    const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
         } else {
-            counter.innerText = target + '+';
+            counter.textContent = target + (target > 3 ? '+' : '');
         }
-    });
+    };
+
+    updateCounter();
 };
 
 // Trigger counter when stats section is visible
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            countUp();
+            const counters = entry.target.querySelectorAll('h4[data-target]');
+            counters.forEach(counter => {
+                if (!counter.classList.contains('counted')) {
+                    counter.classList.add('counted');
+                    animateCounter(counter);
+                }
+            });
             statsObserver.unobserve(entry.target);
         }
     });
