@@ -49,28 +49,6 @@
 
 ---
 
-## 🏗️ System Design & Architecture
-
-I design scalable, production-grade data architectures. Here are some of my system designs:
-
-<div align="center">
-
-### 📐 Architecture Diagrams
-
-> **Coming Soon**: Interactive system design diagrams created with Eraser.io
-
-**Featured Architectures:**
-- 🌐 **Real-Time Streaming Architecture** - Event-driven data pipelines with Kafka & Spark
-- 🏢 **Enterprise Data Lakehouse** - Bronze/Silver/Gold medallion architecture
-- ☁️ **Multi-Cloud Data Platform** - Hybrid AWS/Azure/GCP data orchestration
-- 🔄 **ML Pipeline Architecture** - End-to-end MLOps with SageMaker & Databricks
-
-� *Add your Eraser.io diagram links here once created*
-
-</div>
-
----
-
 ## �📊 GitHub Stats
 
 <div align="center">
