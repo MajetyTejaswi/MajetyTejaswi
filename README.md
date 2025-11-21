@@ -61,17 +61,3 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=MajetyTejaswi&color=blueviolet&style=for-the-badge)
 
 </div>
-
----
-
-## 📫 Let's Connect!
-
-<div align="center">
-
-💼 **LinkedIn:** [linkedin.com/in/tejaswimajety](https://www.linkedin.com/in/tejaswimajety/)  
-🌐 **Portfolio:** [majetytejaswi.github.io/MajetyTejaswi](https://majetytejaswi.github.io/MajetyTejaswi/)  
-📧 **Email:** majetytejaswi@gmail.com
-
-**⭐ From [MajetyTejaswi](https://github.com/MajetyTejaswi)**
-
-</div>
