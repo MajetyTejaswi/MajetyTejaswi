@@ -138,28 +138,40 @@ if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = {
-            name: formData.get('name') || contactForm.querySelector('input[type="text"]').value,
-            email: formData.get('email') || contactForm.querySelector('input[type="email"]').value,
-            subject: formData.get('subject') || contactForm.querySelectorAll('input[type="text"]')[1].value,
-            message: formData.get('message') || contactForm.querySelector('textarea').value
-        };
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
         
-        // Create mailto link
-        const mailtoLink = `mailto:majetytejaswi@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(
-            `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
-        )}`;
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
         
-        // Open email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        alert('Opening your email client... If it doesn\'t open automatically, please email me at majetytejaswi@gmail.com');
-        
-        // Reset form
-        contactForm.reset();
+        try {
+            // FormSpree will handle the submission automatically
+            // We just need to show success/error messages
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // Success
+                alert('✅ Message sent successfully! I\'ll get back to you soon.');
+                contactForm.reset();
+            } else {
+                // Error
+                alert('❌ Oops! There was a problem sending your message. Please try again or email me directly at majetytejaswi@gmail.com');
+            }
+        } catch (error) {
+            alert('❌ Network error. Please check your connection or email me directly at majetytejaswi@gmail.com');
+        } finally {
+            // Reset button
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        }
     });
 }
 
