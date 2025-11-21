@@ -1,5 +1,6 @@
 # Tejaswi Majety - Portfolio
 
+
 Senior Software Engineer - Data & ML with 7+ years of experience designing high-performance ETL/ELT pipelines, implementing distributed data processing at scale, and deploying ML models into production.
 
 ## Professional Highlights
